@@ -1,12 +1,11 @@
 {
-  "name": "babel-starter-kit",
+  "name": "mongo-query-builder",
   "version": "0.0.0",
-  "description": "A project template for authoring and publishing JavaScript libraries",
-  "homepage": "http://www.kriasoft.com/babel-starter-kit",
-  "repository": "kriasoft/babel-starter-kit",
-  "author": "Kriasoft <support@kriasoft.com> (http://www.kriasoft.com)",
+  "description": "POC for generating mongo query from natural language.",
+  "repository": "abhas9/mongo-query-builder",
+  "author": "Abhas Tandon",
   "contributors": [
-    "Konstantin Tarkus <hello@tarkus.me>"
+    "Abhas Tandon"
   ],
   "license": "MIT",
   "main": "lib/index.js",
