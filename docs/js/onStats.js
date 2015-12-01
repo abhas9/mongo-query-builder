@@ -40,7 +40,7 @@ const onStats = (() => {
       callback(value);
     }
     if (!value || (new Date() - new Date(timestamp)) > 300000 /* 5 min */) {
-      const response = await load('https://api.github.com/repos/kriasoft/babel-starter-kit');
+      const response = await load('https://api.github.com/repos/abhas9/mongo-query-builder');
       if (response.meta.status === 200) {
         const data = {
           value: {

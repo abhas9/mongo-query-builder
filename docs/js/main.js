@@ -1,14 +1,8 @@
-/**
- * Babel Starter Kit | https://github.com/babel/babel-starter-kit
- * Copyright (c) Konstantin Tarkus <hello@tarkus.me> | The MIT License
- */
-
 import 'babel/polyfill';
 import onStats from './onStats';
 
 const run = async () => {
   try {
-    console.log('Welcome to Babel Starter Kit!'); // eslint-disable-line no-console
     if (document.querySelector('.stats')) {
       onStats(stats => {
         document.querySelector('.stats-forks span').innerText = stats.forks;

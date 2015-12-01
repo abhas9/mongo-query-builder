@@ -3,8 +3,18 @@ import { expect } from 'chai';
 import QueryBuilder from '../src/QueryBuilder';
 
 describe('QueryBuilder', () => {
-  it('Can build query', () => {
-    expect(QueryBuilder.build('a+b')).to.be.equal('a+b');
-  });
+    it('Can build query', () => {
+        expect(QueryBuilder.build('a >= (b+c) && b == "test"')).to.deep.equal({
+            '$and': [{
+                'a': {
+                    '$gte': {
+                        '$sum': ['b', 'c']
+                    }
+                }
+            }, {
+                'b': "test"
+            }]
+        });
+    });
 
 });
